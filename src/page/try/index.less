@@ -1,0 +1,36 @@
+@options-height: 32px;
+
+.demo-container {
+  .canvas {
+    width: 100vw;
+    height: calc(100vh - @options-height);
+  }
+  #canvas {
+    border: 1px solid #cbcbcb;
+  }
+
+  .options {
+    // height: @options-height;
+  }
+}
+
+.demo-container {
+  @font-face {
+    font-family: 'MyFont';
+    src: url('/public/fonts/FONT.ttf');
+  }
+
+  @font-face {
+    font-family: 'MyFont2';
+    src: url('/public/fonts/ACCESWSS.ttf');
+  }
+
+  .preload-fontface-area {
+    font-family: 'MyFont';
+    // display: inline-block;
+    font-size: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
